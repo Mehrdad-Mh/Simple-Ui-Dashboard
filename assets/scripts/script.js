@@ -58,8 +58,11 @@ let themeBtn = document.querySelector('.theme-btn');
 
 themeBtn.addEventListener('click' , () => {
 
-   document.body.classList.toggle('dark-theme')
+   document.body.classList.toggle('dark-theme');
 
+   themeBtn.querySelector('i:first-child').classList.toggle('active');
+ 
+   themeBtn.querySelector('i:last-child').classList.toggle('active');
 })
 
 // dropdown
